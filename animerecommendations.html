@@ -1,0 +1,445 @@
+<!DOCtype html>
+<html lang="en">
+   <head>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+   <meta charset="utf-8">
+   <title> TheAnimeGeek - AnimeRecommendations </title>
+   <style>
+       body {
+           font-family: "Audiowide", sans-serif;
+         font-size: large;
+         width: 1440px;
+         margin-left: auto;
+         margin-right: auto;
+         background-image: url(https://images.unsplash.com/photo-1567360425618-1594206637d2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBhbmQlMjByZWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-color: #333;
+        }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration:none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        img {
+            width: 100%;
+        }
+        #header {
+            background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/08/17/423064/4679288036c3ada06c99ede23a3e6474-700.jpg);
+            max-height: 150px;
+
+        }
+        #header h1 {
+            margin: 0px;
+            padding-top: 70px;
+            padding-left: 100px;
+            padding-right: 450px;
+            padding-bottom: 100px;
+            font-size: 55px;
+            color: white;
+        }
+        #content-main {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: lightgray;
+            float: left;
+        }
+        #content-side {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: lightgray;
+            float: right;
+        }
+        #content-main-a {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-a {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: white;
+            float: right;
+        }
+        #content-main-b {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-b {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: whitesmoke;
+            float: right;
+        }
+        #content-main-c {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-c {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: white;
+            float: right;
+        }
+        #content-main-d {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-d {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: whitesmoke;
+            float: right;
+        }
+        #content-main-e {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-e {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: white;
+            float: right;
+        }
+        #content-main-f {
+            width: 850px;
+            height: 560px;
+            padding-top: 30px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-f {
+            width: 550px;
+            height: 550px;
+            padding: 20px;
+            background-color: whitesmoke;
+            float: right;
+        }
+        #content-main-g {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-g {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: white;
+            float: right;
+        }
+        #content-main-h {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-h {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: whitesmoke;
+            float: right;
+        }
+        #content-main-i {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-i {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: white;
+            float: right;
+        }
+        #content-main-j {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-j {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: whitesmoke;
+            float: right;
+        }
+        #content-main-k {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-k {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: white;
+            float: right;
+        }
+        #content-main-l {
+            width: 850px;
+            height: 510px;
+            padding-top: 30px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-l {
+            width: 550px;
+            height: 500px;
+            padding: 20px;
+            background-color: whitesmoke;
+            float: right;
+        }
+        #footer {
+            background-image: url(https://images.alphacoders.com/632/632525.png);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1> The Anime Geek </h1>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Home.html">Home</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Winter%20Anime%202021.html">Winter 2021</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Spring%20Anime%202021.html">Spring 2021</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Summer%20Anime%202021.html">Summer 2021</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Fall%20Anime%202021.html">Fall 2021</a></li>
+            <li><a href="#">Anime Recommendations</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20OPs%20to%20Play.html">Anime OPs to Enjoy</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="content-main">
+            <p class="a">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/776228609002730581/3BF5C3179954D2B50CF130C0BCDCDB08887F9CFF/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Demon Slayer Ep19">
+        </div>
+        <div id="content-side">
+            <p class="b">
+            <h2 style="color: red;"> A Brief Introduction</h2>
+            <p>   In the four previous sections, I've discussed all the 2021 animes that I can recommend for you all, even for all the non-geeks out there reading this. In the next two sections, I will discuss all the animes which I can 100% recommend and 1000% prove to you that it's insanely good, as well as to give you some anime openings which I think is fire and I think you will enjoy. All of these anime are shows which I can guarantee you, is really good and really deserves to be on this list. So, without further I do, let's dive in!</p>
+        </div>
+
+        <div id="content-main-a">
+            <p class="c"></p>
+            <img src="https://omnigeekempire.com/wp-content/uploads/2019/03/maxresdefault-17.jpg" alt="Re:Zero">
+        </div>
+        <div id="content-side-a">
+            <p class="d"></p>
+            <h3 style="color: red;">1. Humans Only Die Once... Right?</h3>
+            <p style="font-size: medium;">Anime: Re:Zero - Starting Life In Another World </p>
+            <p style="font-size: small;">   Starting of with this list, we got Natsuki Subaru, a guy who suddenly got summoned to another world, only to find himself dying multiple times and going back in time again and again to protect the people he love and to prevent them from dying.</p>
+            <p style="font-size: small;">   This one will surely give you the most satisfaction in endings, and will also give you some traumas here and there, for Subaru has faced some extremely horrible deaths. This is arguably one of my most favorite animes of all time, because you can see how much one guy can take and how much that same guy will do just to protect the people he love in this new world. </p>
+            <p style="font-size: small;">   Throughout the series we see our main character, facing death countless times, going through every pain and suffering, because he knows he's the only one who can go back in time and correct things to the way it should be. There are countless beautiful moments in this anime where you just feel like you want to share all the pain with Subaru, or that one scene where Subaru meets his parents again in his old world, it's just really touching.</p>
+            <p style="font-size: small;">   If you're a geek and you still haven't watched Re:Zero, then what are you doing? Go watch it now. And for those non-geeks out there who are reading this, you have to give this one a try, because it's a masterpiece of an anime.</p>
+        </div>
+
+        <div id="content-main-b">
+            <p class="e"></p>
+            <img src="https://wallpaperaccess.com/full/1099445.png" alt="Demon Slayer">
+        </div>
+        <div id="content-side-b">
+            <p class="f"></p>
+            <h3 style="color: red;">2. The Only World Record Holder</h3>
+            <p style="font-size: medium;">Anime: Demon Slayer: Kimetsu No Yaiba </p>
+            <p style="font-size: small;">   Demon Slayer is the first ever anime to have sold over 150 million copies worldwide, while also having a film that grossed more than 500 million dollars and has been taking over the world ever since it was released. Season 2 is coming up in December, and  I can bet every episode will be trending when it's released. </p>
+            <p style="font-size: small;">   To give you a summary, here it is: Tanjiro Kamado had his whole family murdered by demons, except for Nezuko, his little sister, who has become a demon herself. Because of this, Tanjiro has set out a quest to defeat all the demons and provide a cure for his little sister.</p>
+            <p style="font-size: small;">   Demon Slayer is an s+tier anime for most geeks out there. If you still don't get why millions of people worldwide are a fan of this anime, then let me tell you this, IT IS REALLY GOOD. From the stunning visuals of each fight scene, to every moment in this anime, it just feels like we're watching a history being made. From the music, to the story, it is just TOP TIER.</p>
+            <p style="font-size: small;">   I can definitely see Demon Slayer in the top someday, and if you want to see it with me, then go watch the series, and the movie first.</p>
+        </div>
+
+        <div id="content-main-c">
+            <p class="g"></p>
+            <img src="https://sportshub.cbsistatic.com/i/2021/08/09/26a2da94-47f2-47ee-9f08-f1b9464e4c0b/that-time-i-got-reincarnated-as-a-slime-season-2-op-ed-2-1275070.jpg" alt="Tensura">
+        </div>
+        <div id="content-side-c">
+            <p class="h"></p>
+            <h3 style="color: red;">3. Classic in the Making</h3>
+            <p style="font-size: medium;">Anime: That Time I Got Reincarnated As A Slime </p>
+            <p style="font-size: small;">  With the cliffhanger ending of season 2, many fans are gonna be waiting for the return of Rimuru Tempest, together with his patrons, and his country. </p>
+            <p style="font-size: small;">  That TIme I Got Reincarnated As A Slime follows our main lead, Satoru Mikami, getting stabbed and reincarnating into another world, as a slime. </p>
+            <p style="font-size: small;">   This anime is the definition of world-building. After reincarnating as a slime, he gets into a faithful encounter with a dragon named Veldora, and proceeds to make a deal with him. The slime receives tremendous powers and the name, "Rimuru Tempest". As an overpowered slime, Rimuru beings his journey in this world, made a lot of allies, took down the bad guys, and built a country.</p>
+            <p style="font-size: small;">  The world of slime is so diversed, as each kingdom will be explored and every single being in the world will somehow take part in the story. And remember, this slime is building a country, and many stand in his way. Definitely go give this a watch, because it will not disappoint.</p>
+        </div>
+
+        <div id="content-main-d">
+            <p class="g"></p>
+            <img src="https://www.geekgirlauthority.com/wp-content/uploads/2020/04/love-is-war-miyuki-kaguya.jpg" alt="Love is War">
+        </div>
+        <div id="content-side-d">
+            <p class="h"></p>
+            <h3 style="color: red;">4. The First Who Confesses Lose!</h3>
+            <p style="font-size: medium;">Anime: Kaguya-Sama: Love Is War </p>
+            <p style="font-size: small;"> I'm a fan of romantic comedy and all, but this anime just took it to the next level.</p>
+            <p style="font-size: small;"> Kaguya-sama: Love Is war follows our two main protagonists, the president and vice president of the student council in Shuchiin Academy, Miyuki Shirogane and Kaguya Shinomiya. The two can't admit that they're in love with each other, so each tries to win a confession of affection from the other. This results in increasingly ridiculous mind games in which they end up outsmarting themselves. </p>
+            <p style="font-size: small;">  This show is just a fun watch, because for every episode, someone comes up with a scheme, but ultimately failing, or even making themself look bad in the process. Their romantic chemistry is off the charts and you can finally see why two geniuses can be perfect for each other (at least in this anime). </p>
+            <p style="font-size: small;">I can promise you that each episode of this anime will even put non-geeks with a smile on their face. Go watch it now! Season 3 is coming in 2022!</p>
+        </div>
+
+       <div id="content-main-e">
+           <p class="g"></p>
+         <img src="https://otakuorbit.com/wp-content/uploads/2021/03/Screenshot-2021-03-26-231928.png" alt="Jujutsu Kaisen">
+       </div>
+       <div id="content-side-e">
+            <p class="h"></p>
+           <h3 style="color: red;">5. Peak Shonen Anime</h3>
+           <p style="font-size: medium;">Anime: Jujutsu Kaisen </p>
+           <p style="font-size: small;">  2020 anime of the year is here, Jujutsu Kasien, and right now we're just waiting for the movie to arrive in December. Jujutsu Kaisen fans are really gonna be hyped up. </p>
+           <p style="font-size: small;">  Jujutsu kaisen is about a boy named Yuji Itadori who idly joined the Occult Club in their school, but got involved in Jujutsu sorcery after an encounter with a curse. He then joined the jujutsu sorcerers in order to kill a powerful curse named Sukuna, whom Yuji is the host.</p>
+           <p style="font-size: small;"> Many animes are too generic and bland, but somehow, Jujutsu Kaisen does everything right. From the execution of the story, to the epic and badass fight scenes, this definitely needs more attention than most of the anime around.</p>
+           <p style="font-size: small;"> Even if Jujutsu Kaisen's ideas of a shonen anime are not the most original, they make the best out of it. Characters are likabe, animation is god-tier, and it really shows potential just from the beginning episodes. Definitely a good show to start off your anime journey as a geek like me.</p>
+       </div>
+
+        <div id="content-main-f">
+            <p class="g"></p>
+          <img src="https://qph.fs.quoracdn.net/main-qimg-46ba76e50f3960604413d782283ac095" alt="Death Note">
+        </div>
+        <div id="content-side-f">
+             <p class="h"></p>
+            <h3 style="color: red;">6. A Literal Classic</h3>
+            <p style="font-size: medium;">Anime: Death Note </p>
+            <p style="font-size: small;">  I'm sure everyone has heard of Death Note and how it became the face of the modern anime. That's why I'm just gonna give you a quick summary of this, as well as my feedback on it. </p>
+            <p style="font-size: small;">  The story follows Light Yagami, a student who came across the death note, a notebook in which if you write someone's name in it, they will die within 40 seconds. After picking up the death note, he then proceeds to his mission of cleansing the world full of crimes, but one person stands in his way, L. After anouncing himself to the public, Light and L battles on who's gonna get on top to stop the other from reaching their goals.</p>
+            <p style="font-size: small;">   Death Note is the type of edgy anime that you're really gonna enjoy watching. After I finished it, I began to question myself, if Light was really right about his ideas of a crime-free world, or is he just a man who wants power? That's just one of the questions that Death Note's gonna put on your mind. The anime literally raises more questions than answers towards the end, and it really is a fun watch.</p>
+            <p style="font-size: small;">  Go watch it now and savor the intense storytelling and insane plotpoints that Death Note has to offer. </p>
+        </div>
+
+        <div id="content-main-g">
+            <p class="g"></p>
+          <img src="https://podcast.toonamifaithful.com/wp-content/uploads/2016/09/OPMep7meteorpunch.jpg" alt="One Punch Man">
+        </div>
+        <div id="content-side-g">
+             <p class="h"></p>
+            <h3 style="color: red;">7. True Hero </h3>
+            <p style="font-size: medium;">Anime: One Punch Man </p>
+            <p style="font-size: small;"> This is a story about a guy, who got so overpowered, that he can defeat everything, with a single punch.  </p>
+            <p style="font-size: small;">  If you think that's it, then you're wrong, because why would I put this on this list if that's it? Anyway, Saitama, are main protagonist, is bored because he can literally defeat everyone with just one punch. But throughout the series, we see Saitama showing things that only a true hero will show. </p>
+            <p style="font-size: small;">  There are countless scenes in this anime where it will just fuel you up and inspire you. Acts of selflessness, sacrificing yourself for the sake of other people, and just simply being a hero. The visuals and fight scenes are top-notch, and for every fight scene there a hype going on. </p>
+            <p style="font-size: small;">  This anime has become a satire and an inspirational show, so give it a try and add it to your list.</p>
+        </div>
+
+        <div id="content-main-h">
+            <p class="g"></p>
+          <img src="https://images.alphacoders.com/110/thumb-1920-1108683.jpg" alt="Mushoku Tensei">
+        </div>
+        <div id="content-side-h">
+             <p class="h"></p>
+            <h3 style="color: red;">8. A Second Chance in Life </h3>
+            <p style="font-size: medium;">Anime: Mushoku Tensei: Jobless Reincarnation </p>
+            <p style="font-size: small;">  Possibly being the best anime of 2021, Mushoku Tensei: Jobless Reincarnation has taken the world by storm, blowing up in popularity in every episode released. The last episode has a heartbreaking plot twist, and I can't wait for the next episode to be released in Monday. </p>
+            <p style="font-size: small;">  Mushoku Tensei follows the life of a man being evicted to his home after his parents' death. He concludes that his entire life is pointless, and upon walking down into a street, he saw a group of teenagers that are gonna get hit by a truck. In an attempt to do something meaningful for once, he manages to pull one of them, taking his life in the proces. After that, he awakened as a baby in another world, and so, his second chance in life has begun. </p>
+            <p style="font-size: small;"> This is a just wholesome watch and a fresh take to the isekai genres. Most isekai animes, or animes in which the main character is trasnported to another world, are just power fantasies. They tend to forget the meaning of an isekai anime, and just proceeds to the main character taking out the bad guy. But Mushoku Tensei is different. There's actual world-building and our main protagonist just wants to do better in the second life in which God has given upon him.</p>
+            <p style="font-size: small;"> Mushoku Tensei is definitely not child-friendly, mainly because our main character is perverted, but the story is just so fullfilling to the heart. A guy who was given a second chance in life and wants to make the best out of it. Simple but wonderful, 10/10!</p>
+        </div>
+
+        <div id="content-main-i">
+            <p class="g"></p>
+          <img src="https://media.comicbook.com/2018/01/assassinationclassroomjpg-fe1e39-1280w-1073011.jpeg?auto=webp&width=1200&height=675&crop=1200:675,smart" alt="Assassination Classroom">
+        </div>
+        <div id="content-side-i">
+             <p class="h"></p>
+            <h3 style="color: red;">9. The Definition of a Teacher </h3>
+            <p style="font-size: medium;">Anime: Assassination Classroom </p>
+            <p style="font-size: small;">  Who doesn't love a good teacher? Yet alone a teacher who's also an overpowered-octopus who plans to destroy Earth before his students' graduation? </p>
+            <p style="font-size: small;">  Assassination Classroom follows the daily life of an extremely powerful octopus-like being, Koro-Sensei, working as a junior high homeroom teacher, and his students dedicated to the task of assassinating him to prevent Earth from being destroyed.</p>
+            <p style="font-size: small;">  For a weird concept like this, it's certain to say that all the geeks who've watched this anime will call our octopus protagonist the best teacher, because he really is. The emotional build-ups are so high, that even though we all know Koro-Sensei's gonna die in the end, his death was more painful than any anime that we geeks have ever watched.</p>
+            <p style="font-size: small;">  I definitely cried a lot in watching this one, and surely you will too after you watch it.</p>
+        </div>
+
+        <div id="content-main-j">
+            <p class="g"></p>
+          <img src="https://animeshelter.com/wp-content/uploads/2019/07/Senkuu-cool.jpg" alt="Dr. Stone">
+        </div>
+        <div id="content-side-j">
+             <p class="h"></p>
+            <h3 style="color: red;">10. A Little Bit of Science in Everything </h3>
+            <p style="font-size: medium;">Anime: Dr. Stone </p>
+            <p style="font-size: small;"> I actually can't believe that the one who introduced me to Dr. Stone is an actual teacher from Pisay(HAHAHAHAH), seriously. This anime just keeps on popping up in everything that's related to science, and all the geeks out there who have watched Dr. Stone will surely know why. </p>
+            <p style="font-size: small;">  The story follows a genius named Senku Ishigami, who awakens in a petrified world with his friend named Taiju. The two sets out on a conquest to revive everyone who got petrified and rebuild their entire civilization, with the use of the most powerful weapon in this world, science. </p>
+            <p style="font-size: small;"> This anime is surely mad in using science, from the most common of food today, up to the most advanced technology today, it is complete. You can definitely say that this anime, is the most educational one out there. Despite all the science and experiments happening in every episode, this show doesn't miss the fun and proceeds to make us convinced that school, and most importantly, science can be fun as well.</p>
+            <p style="font-size: small;"> Most normies tend to start make this show the start of their anime life. So, if you want to start becoming a geek, you have to go see this first.</p>
+        </div>
+
+        <div id="content-main-k">
+            <p class="g"></p>
+          <img src="https://otakukart.com/wp-content/uploads/2021/02/Classroom-of-the-Elite-Season-2-e1613843901480-1200x900.jpg" alt="Classroom of the Elite">
+        </div>
+        <div id="content-side-k">
+             <p class="h"></p>
+            <h3 style="color: red;">11. Battle of the Brains </h3>
+            <p style="font-size: medium;">Anime: Classroom of the Elite </p>
+            <p style="font-size: small;">  "All people are nothing but tools. Regardless of the methods, regardless of what needs to be sacrificed, in this world, winning is everything. As long as I win in the end, that's all there is to it." Welcome to the Classroom of the Elite. </p>
+            <p style="font-size: small;"> The story follows the perspective of Kiyotaka Ayanokōji, a quiet and unassuming boy who is not good at making friends and would rather keep his distance, but possesses unrivaled intelligence. He is a student of Class-D, which is where the school dumps its inferior students. After a threat by his teacher, he proceeds to eliminate all the classrooms and make their classroom the Class-A.</p>
+            <p style="font-size: small;"> This anime will make you think about its characters and appreciate the conflict of interests on both a personal level and the big picture. Dynamic story progression and ambitious character development backed by good story writing make this a must watch.</p>
+        </div>
+
+        <div id="content-main-l">
+            <p class="g"></p>
+          <img src="https://images.saymedia-content.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NDI4ODA0MTg0Mjg2ODU0/animes-like-shigatsu-wa-kimi-no-uso-your-lie-in-april.jpg" alt="Your Lie in April">
+        </div>
+        <div id="content-side-l">
+             <p class="h"></p>
+            <h3 style="color: red;">12. Depression </h3>
+            <p style="font-size: medium;">Anime: Your Lie in April </p>
+            <p style="font-size: small;"> Ending off with my list, here we got an anime that can't cure depression, but rather, causes it.  </p>
+            <p style="font-size: small;"> Your Lie in April is a story about a piano prodigy who lost his ability to play after suffering a traumatic event in his childhood is forced back into the spotlight by an eccentric girl with a secret of her own. The story follows Arima Kousei, a skilled pianist. However, he hasn't played since he played for his mother who died a few years ago.</p>
+            <p style="font-size: small;"> All I can really say about this anime, is get your tissues out. Our two main protagonists will teach us how to love, and they're gonna teach it in the most painful way possible, as each episode is packed with painful twists, traumas of the past, and heartbreaking lines to top it all up. </p>
+        </div>
+    </div>
+    <div id="footer">
+        <p style="color: white;">The Anime Geek</p>
+            <ul>
+               <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20About%20Me.html">About The Author</a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ">Help</a></li>
+            </ul>
+        <p style="color: white">Copyright © 2021 Sebastian Paschal M. Alcaraz, Credits to the Owners of the picturesa and the anime</p>
+    </div>
+
+</body>
+</html>

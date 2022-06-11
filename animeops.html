@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+   <meta charset="utf-8">
+   <title> TheAnimeGeek - AnimeOP </title>
+   <style>
+       body {
+           font-family: "Audiowide", sans-serif;
+         font-size: large;
+         width: 1440px;
+         margin-left: auto;
+         margin-right: auto;
+         background-image: url(https://images.unsplash.com/photo-1567360425618-1594206637d2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBhbmQlMjByZWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-color: #333;
+        }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration:none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        img {
+            width: 100%;
+        }
+        #header {
+            background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/08/17/423064/4679288036c3ada06c99ede23a3e6474-700.jpg);
+            max-height: 150px;
+
+        }
+        #header h1 {
+            margin: 0px;
+            padding-top: 70px;
+            padding-left: 100px;
+            padding-right: 450px;
+            padding-bottom: 100px;
+            font-size: 55px;
+            color: white;
+        }
+        #content-main {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-main-a {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-a {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-main-b {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-b {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-main-c {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-c {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-main-d {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-d {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-main-e {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-e {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-main-f {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-f {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-main-g {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-g {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-main-h {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-h {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-main-i {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-i {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-main-j {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-j {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-main-k {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-k {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-main-l {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-l {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-main-m {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-side-m {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: whitesmoke;
+            float: left;
+        }
+        #content-main-n {
+            width: 1090px;
+            height: 650px;
+            padding-top: 10px;
+            background-color: white;
+            float: left;
+        }
+        #content-side-n {
+            width: 330px;
+            height: 640px;
+            padding: 10px;
+            background-color: white;
+            float: left;
+        }
+        #footer {
+            background-image: url(https://images.alphacoders.com/632/632525.png);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1> The Anime Geek </h1>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Home.html">Home</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Winter%20Anime%202021.html">Winter 2021</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Spring%20Anime%202021.html">Spring 2021</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Summer%20Anime%202021.html">Summer 2021</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Fall%20Anime%202021.html">Fall 2021</a></li>
+            <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20Anime%20Recommendations.html">Anime Recommendations</a></li>
+            <li><a href="#">Anime OPs to Enjoy</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="content-main">
+                <iframe width="956" height="538" src="https://www.youtube.com/embed/Q07Y7AM3F_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side">
+            <p style="color: red; font-size: x-large;"> Anime: Demon Slayer: Kimetsu No Yaiba Mugen Train Arc</p>
+            <p style="font-size: medium;"> Title: Akeboshi </p>
+            <p style="font-size: medium;"> Singer: LiSA</p>
+            <p style="font-size: medium;"> Aired: Oct 10, 2021 to Nov 28, 2021</p>
+            <p style="font-size: medium;"> Premiered: Fall 2021</p>
+            <p style="font-size: medium;"> Broadcast: Sundays at 23:15 (JST)</p>
+        </div>
+    
+        <div id="content-main-a">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/Qnebg3Ctfzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-a">
+            <p style="color: red; font-size: x-large;"> Anime: The World's Finest Assassin Gets Reincarnated In Another World As an Aristocrat</p>
+            <p style="font-size: medium;"> Title: Dark Seeks Light</p>
+            <p style="font-size: medium;"> Singer: Yui Ninomiya</p>
+            <p style="font-size: medium;"> Aired: Oct 6, 2021 to ?</p>
+            <p style="font-size: medium;"> Premiered: Fall 2021</p>
+            <p style="font-size: medium;"> Broadcast: Wednesdays at 23:00 (JST)</p>
+
+        </div>
+        
+        <div id="content-main-b">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/G6ha_G0JDmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-b">
+            <p style="color: red; font-size: x-large;"> Re:Zero - Starting Life In Another World Season 2 Part 1</p>
+            <p style="font-size: medium;"> Title: Realize</p>
+            <p style="font-size: medium;"> Singer: Konomi Suzuki</p>
+            <p style="font-size: medium;"> Aired: Jul 8, 2020 to Sep 30, 2020</p>
+            <p style="font-size: medium;"> Premiered: Summer 2020</p>
+            <p style="font-size: medium;"> Broadcast: Wednesdays at 22:30 (JST)</p>
+        </div>
+   
+        <div id="content-main-c">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/8QE9cmfxx4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-c">
+            <p style="color: red; font-size: x-large;"> Anime: Death Note</p>
+            <p style="font-size: medium;"> Title: The WORLD</p>
+            <p style="font-size: medium;"> Singer: Nightmare</p>
+            <p style="font-size: medium;"> Aired: Oct 4, 2006 to Jun 27, 2007</p>
+            <p style="font-size: medium;"> Premiered: Fall 2006</p>
+            <p style="font-size: medium;"> Broadcast: Wednesdays at 00:56 (JST)</p>
+        </div>
+    
+        <div id="content-main-d">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/kErJOepkDQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-d">
+            <p style="color: red; font-size: x-large;"> Anime: One Punch Man</p>
+            <p style="font-size: medium;"> Title: The Hero!!</p>
+            <p style="font-size: medium;"> Singer: Jam Project</p>
+            <p style="font-size: medium;"> Aired: Oct 5, 2015 to Dec 21, 2015</p>
+            <p style="font-size: medium;"> Premiered: Fall 2015</p>
+            <p style="font-size: medium;"> Broadcast: Mondays at 01:05 (JST)</p>
+        </div>
+    
+        <div id="content-main-e">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/NcJvsczntO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-e">
+            <p style="color: red; font-size: x-large;"> Anime: Kaguya-Sama: Love Is War</p>
+            <p style="font-size: medium;"> Title: Love Dramatic</p>
+            <p style="font-size: medium;"> Singer: Masayuki Suzuki</p>
+            <p style="font-size: medium;"> Aired: Jan 12, 2019 to Mar 30, 2019</p>
+            <p style="font-size: medium;"> Premiered: Winter 2019</p>
+            <p style="font-size: medium;"> Broadcast: Saturdays at 23:30 (JST)</p>
+        </div>
+    
+        <div id="content-main-f">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/v8bZVdTgXoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-f">
+            <p style="color: red; font-size: x-large;"> Anime: Jujutsu Kaisen</p>
+            <p style="font-size: medium;"> Title: Kaikai Kitan</p>
+            <p style="font-size: medium;"> Singer: Eve</p>
+            <p style="font-size: medium;"> Aired: Oct 3, 2020 to Mar 27, 2021</p>
+            <p style="font-size: medium;"> Premiered: Fall 2020</p>
+            <p style="font-size: medium;"> Broadcast: Saturdays at 01:25 (JST)</p>
+        </div>
+  
+        <div id="content-main-g">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/2p8ig-TrYPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-g">
+            <p style="color: red; font-size: x-large;"> Anime: Vivy - Fluorite Eye's Song</p>
+            <p style="font-size: medium;"> Title: Sing My Pleasure</p>
+            <p style="font-size: medium;"> Singer: Kairi Yagi</p>
+            <p style="font-size: medium;"> Aired: Apr 3, 2021 to Jun 19, 2021</p>
+            <p style="font-size: medium;"> Premiered: Spring 2021</p>
+            <p style="font-size: medium;"> Broadcast: Saturdays at 23:30 (JST)</p>
+        </div>
+   
+        <div id="content-main-h">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/0Vwwr3VGsYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-h">
+            <p style="color: red; font-size: x-large;"> Anime: Re:Zero - Starting Life in Another World</p>
+            <p style="font-size: medium;"> Title: Redo</p>
+            <p style="font-size: medium;"> Singer: Konomi Suzuki</p>
+            <p style="font-size: medium;"> Aired: Apr 4, 2016 to Sep 19, 2016</p>
+            <p style="font-size: medium;"> Premiered: Spring 2016</p>
+            <p style="font-size: medium;"> Broadcast: Mondays at 01:05 (JST)</p>
+        </div>
+    
+        <div id="content-main-i">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/lTlzDfhPtFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-i">
+            <p style="color: red; font-size: x-large;"> Anime: Kaguya-Sama: Love Is War Season 2</p>
+            <p style="font-size: medium;"> Title: Daddy! Daddy! Do!</p>
+            <p style="font-size: medium;"> Singer: Masayuki Suzuki</p>
+            <p style="font-size: medium;"> Aired: Apr 11, 2020 to Jun 27, 2020</p>
+            <p style="font-size: medium;"> Premiered: Spring 2020</p>
+            <p style="font-size: medium;"> Broadcast: Saturdays at 23:30 (JST)</p>
+        </div>
+    
+        <div id="content-main-j">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/8iP8xXXdvoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-j">
+            <p style="color: red; font-size: x-large;"> Anime: Horimiya</p>
+            <p style="font-size: medium;"> Title: Iro Kousei</p>
+            <p style="font-size: medium;"> Singer: Yoh Kamiyama</p>
+            <p style="font-size: medium;"> Aired: Jan 10, 2021 to Apr 4, 2021</p>
+            <p style="font-size: medium;"> Premiered: Winter 2021</p>
+            <p style="font-size: medium;"> Broadcast: Sundays at 00:30 (JST)</p>
+        </div>
+    
+        <div id="content-main-k">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/tF4faMbs5oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-k">
+            <p style="color: red; font-size: x-large;"> Anime: Dr. Stone</p>
+            <p style="font-size: medium;"> Title: Good Morning World!</p>
+            <p style="font-size: medium;"> Singer: Burnout Syndromes</p>
+            <p style="font-size: medium;"> Aired: Jul 5, 2019 to Dec 13, 2019</p>
+            <p style="font-size: medium;"> Premiered: Summer 2019</p>
+            <p style="font-size: medium;"> Broadcast: Fridays at 22:00 (JST)</p>
+        </div>
+   
+        <div id="content-main-l">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/wmWX6ZGSzuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-l">
+            <p style="color: red; font-size: x-large;"> Anime: Takt Opt Destiny</p>
+            <p style="font-size: medium;"> Title: takt </p>
+            <p style="font-size: medium;"> Singer: Ryo (supercell) feat. Mafumafu, gaku</p>
+            <p style="font-size: medium;"> Aired: Oct 6, 2021 to ?</p>
+            <p style="font-size: medium;"> Premiered: Fall 2021</p>
+            <p style="font-size: medium;"> Broadcast: Wednesdays at 00:00 (JST)</p>
+        </div>
+
+        <div id="content-main-m">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/QG8UZUahRbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-m">
+            <p style="color: red; font-size: x-large;"> Anime: Mushoku Tensei: Jobless Reincarnation</p>
+            <p style="font-size: medium;"> Title: Tabibito no Uta </p>
+            <p style="font-size: medium;"> Singer: Yuiko Ohara</p>
+            <p style="font-size: medium;"> Aired: Jan 11, 2021 to Mar 22, 2021</p>
+            <p style="font-size: medium;"> Premiered: Winter 2021</p>
+            <p style="font-size: medium;"> Broadcast: Mondays at 00:00 (JST)</p>
+            <p style="font-size: small;"> (Due to copyright issues, we can't play the video here. Sorry for the inconvinience!)</p>
+        </div>
+
+        <div id="content-main-n">
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/mLh5hRsCZ5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="content-side-n">
+            <p style="color: red; font-size: x-large;"> Anime: That Time I Got Reincarnated As A Slime Season 2 Part 2</p>
+            <p style="font-size: medium;"> Title: Like Flames </p>
+            <p style="font-size: medium;"> Singer: MindaRyn</p>
+            <p style="font-size: medium;"> Aired: Jul 6, 2021 to Sep 21, 2021</p>
+            <p style="font-size: medium;"> Premiered: Summer 2021</p>
+            <p style="font-size: medium;"> Broadcast: Tuesdays at 23:00 (JST)</p>
+            <p style="font-size: small;"> (Due to copyright issues, we can't play the video here. Sorry for the inconvinience!)</p>
+        </div>
+
+    </div>
+    <div id="footer">
+        <p style="color: white;">The Anime Geek</p>
+            <ul>
+               <li><a href="file:///C:/Users/ACER/OneDrive/Documents/ComSci/Quarter%20Project/Quarter%20Project%20-%20About%20Me.html">About The Author</a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ">Help</a></li>
+            </ul>
+        <p style="color: white">Copyright © 2021 Sebastian Paschal M. Alcaraz, Credits to the Owners of the picturesa and the anime</p>
+    </div>
+
+</body>
+</html>
